@@ -1,0 +1,13 @@
+version: "3"
+services:
+    mongodb:
+        image: mongo:latest
+        restart: "no"
+        volumes:
+            - /tmp/mongo/db:/data/db
+            - /tmp/mongo/log:/var/log/mongodb
+        ports:
+            - 27017:27017
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: "123456"
