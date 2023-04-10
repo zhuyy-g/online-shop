@@ -34,3 +34,12 @@ export interface FavoriteGoodsInfo {
     maxnum?: number
     skus_type?: number
 }
+
+export interface SearchInfo {
+    title: string
+    page?: number
+    all?: "desc" | "asc"
+    sale_count?: "desc" | "asc"
+    min_price?: "desc" | "asc"
+    price?: string
+}

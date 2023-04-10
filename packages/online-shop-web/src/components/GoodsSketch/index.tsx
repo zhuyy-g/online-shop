@@ -8,7 +8,7 @@ const GoodsSketch = (props: GoodsInfo) => {
     return (
         <div className="goods-sketch-warp">
             <Image src={cover} />
-            <div className="goods-sketch-desd">
+            <div className="goods-sketch-desc">
                 <Tag size="medium" type="primary" round>
                     {title}
                 </Tag>

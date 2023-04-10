@@ -1,6 +1,7 @@
 // 与后台交互入口模块
 import axios from "axios"
 import { CustomerInfo } from "../ts-type/customer"
+import { SearchInfo } from "../ts-type/goods"
 
 // 以下两个接口使用nodejs解决
 // 注册接口
@@ -20,3 +21,6 @@ export const reqIndexCategory = () => axios.get("/api/index_category/data")
 
 // 获取指定商品详情数据
 export const reqGoodsDetail = (id: string) => axios.get("/api/goods/" + id)
+
+// 搜索商品
+export const reqSearch = (searchInfo: SearchInfo) => axios.post("/api/goods/search", searchInfo)
